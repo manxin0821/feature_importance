@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys
+import run_proj
+
+if __name__ == '__main__':
+	sys.exit(run_proj.main())

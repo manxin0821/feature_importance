@@ -1,0 +1,44 @@
+synthetic_data:
+ 
+  n_features: 40
+  n_informative: 10
+  n_redundant: 10
+  n_samples: 1000
+  
+data_split:
+
+  trading_data:
+  
+    test_cut: '2017-12-31'
+    valid_cut: '2016-01-01'
+  
+  public_data:
+  
+    test_size: 0.3
+    
+scale:
+
+  trading_data: true
+  synthetic_data: true
+  public_data: true
+  
+hyperparam:
+  general:
+    n_iterations: 100
+  random_forecast:
+    n_estimators: 10
+    n_explains: 10
+    
+file_name:
+
+    return_file: '*.csv'
+    feature_file: '*.csv'
+    
+metrics:
+
+    classification: ['f1','auc','acc']
+    regression: ['mae','mse','r2'] 
+
+output_directory: ['feature', 'logs', 'summary']
+
+ 
